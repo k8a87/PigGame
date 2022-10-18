@@ -24,8 +24,8 @@ body {
 
 /* LAYOUT */
 main {
-  position: relative;
-  width: 100rem;
+  /* position: relative; */
+  /* width: 100rem; */
   height: 60rem;
   background-color: rgba(255, 255, 255, 0.35);
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
@@ -41,17 +41,20 @@ main {
   flex-direction: column;
   align-items: center;
   transition: all 0.75s;
+  width: 35vw;
 }
 
 /* ELEMENTS */
 .name {
   position: relative;
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
   font-weight: 300;
   margin-bottom: 1rem;
+  text-align: center;
+  padding-top: 10rem;
 }
 
 .score {
@@ -80,7 +83,6 @@ main {
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
-  width: 65%;
   padding: 2rem;
   text-align: center;
   transition: all 0.75s;
@@ -130,16 +132,16 @@ main {
 }
 
 .btn--how {
-  top: 1rem;
-}
-.btn--new {
   top: 8rem;
 }
+.btn--new {
+  top: 17rem;
+}
 .btn--roll {
-  top: 39.3rem;
+  top: 80vh;
 }
 .btn--hold {
-  top: 46.1rem;
+  top: 90vh;
 }
 
 .btn:active {
@@ -160,7 +162,7 @@ main {
 .dice {
   position: absolute;
   left: 50%;
-  top: 16.5rem;
+  top: 45vh;
   transform: translateX(-50%);
   height: 10rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);

@@ -42,6 +42,15 @@ const switchPlayer = function () {
   player1El.classList.toggle("player--active");
 };
 
+import dice1 from "./images/dice-1.png";
+import dice2 from "./images/dice-2.png";
+import dice3 from "./images/dice-3.png";
+import dice4 from "./images/dice-4.png";
+import dice5 from "./images/dice-5.png";
+import dice6 from "./images/dice-6.png";
+
+const diceArr = [dice1, dice2, dice3, dice4, dice5, dice6];
+
 // Roll dice functionality
 btnRoll.addEventListener("click", function () {
   if (playing) {
@@ -51,7 +60,7 @@ btnRoll.addEventListener("click", function () {
 
     //2. Display dice
     diceEl.classList.remove("hidden");
-    diceEl.src = `images/dice-${dice}.png`;
+    diceEl.src = diceArr[dice - 1];
 
     //3. Check for rolled 1: if true switch to next player
     if (dice !== 1) {
